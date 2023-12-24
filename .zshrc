@@ -52,5 +52,8 @@ zstyle ':completion:*' matcher-list '' \
   'r:[^[:alpha:]]||[[:alpha:]]=** r:|=* m:{a-z\-}={A-Z\_}' \
   'r:|?=** m:{a-z\-}={A-Z\_}'
 
-
-source /opt/ros/noetic/setup.zsh
+# installing ros cause sip->sip4(aur) python-pyqt5->python-pyqt5-sip4(aur)
+robot() {
+  source /opt/ros/humble/setup.zsh
+  echo "ROS2-humble ready"
+}
